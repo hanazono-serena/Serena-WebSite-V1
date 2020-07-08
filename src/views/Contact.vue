@@ -24,12 +24,11 @@
                     </fieldset>
                     <fieldset>
                         <label>
-                            <textarea placeholder="メッセージ" v-model="message"></textarea>
+                            <textarea placeholder="メッセージ" tabindex="4" v-model="message"/>
                         </label>
                     </fieldset>
                     <fieldset>
-                        <button v-on:click="submit()">送信</button>
-                        <!--                        <button>送信</button>-->
+                        <button v-on:click="submit()" tabindex="5" :disabled="on_submit===true">送信</button>
                     </fieldset>
                 </form>
             </div>
@@ -45,7 +44,9 @@
                 name: null,
                 email: null,
                 title: null,
-                message: null
+                message: null,
+                xsrf: null,
+                on_submit: false
             }
         },
         beforeCreate: function () {
@@ -53,19 +54,35 @@
         },
         methods: {
             submit: function () {
+                this.on_submit = true
                 let data = {name: this.name, email: this.email, title: this.title, message: this.message}
-                this.$http.post('http://localhost:6001/contact', data).then(function (response) {
-                    if (response.status === 200) {
-                        alert('成功')
-                        this.name = null
-                        this.email = null
-                        this.title = null
-                        this.message = null
-                    } else {
-                        alert('failed...')
-                    }
-                }.bind(this))
+                try {
+                    this.$http.post('http://localhost:6001/contact', data, {
+                        withCredentials: true,
+                        headers: {'X-XSRFToken': this.xsrf}
+                    }).then(function (response) {
+                        if (response.status === 200) {
+                            alert('成功')
+                            this.name = null
+                            this.email = null
+                            this.title = null
+                            this.message = null
+                            this.on_submit = false
+                        } else {
+                            alert('failed...')
+                            this.on_submit = false
+                        }
+                    }.bind(this))
+                } catch (e) {
+                    alert('failed...')
+                    this.on_submit = false
+                }
             }
+        },
+        mounted() {
+            this.$http.get('http://localhost:6001/contact', {withCredentials: true}).then(function (response) {
+                this.xsrf = response.data.token
+            }.bind(this))
         }
     }
 </script>
