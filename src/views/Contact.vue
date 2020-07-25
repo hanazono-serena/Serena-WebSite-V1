@@ -3,7 +3,10 @@
         <div class="wrapper">
             <div>
                 <h1>ご依頼の際は</h1>
-                <p>要求</p>
+                <p>下記の内容をご記入してください。</p>
+                <p>お名前：</p>
+                <p>連絡先：</p>
+                <p>要求・要望：</p>
             </div>
             <div>
                 <form id="contact" @submit.prevent="" style="padding-top: 30px">
@@ -57,7 +60,7 @@
                 this.on_submit = true
                 let data = {name: this.name, email: this.email, title: this.title, message: this.message}
                 try {
-                    this.$http.post('http://localhost:6001/contact', data, {
+                    this.$http.post('https://contact.serena.moe/contact', data, {
                         withCredentials: true,
                         headers: {'X-XSRFToken': this.xsrf}
                     }).then(function (response) {
@@ -80,7 +83,7 @@
             }
         },
         mounted() {
-            this.$http.get('http://localhost:6001/contact', {withCredentials: true}).then(function (response) {
+            this.$http.get('https://contact.serena.moe/contact', {withCredentials: true}).then(function (response) {
                 this.xsrf = response.data.token
             }.bind(this))
         }
@@ -92,7 +95,6 @@
         display: grid;
         grid-template-columns: repeat(2, 30vw);
         grid-gap: 30px;
-        /*grid-auto-rows: minmax(100px,auto);*/
     }
 
     fieldset {
