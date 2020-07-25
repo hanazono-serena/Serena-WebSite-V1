@@ -9,10 +9,10 @@ from tornado.ioloop import IOLoop
 from tornado.web import Application, HTTPError
 from tornado.web import RequestHandler
 
-EMAIL_SENDER = ''
-EMAIL_RECEIVER = ''
-SMTP_HOST = ''
-SMTP_USER = ''
+EMAIL_SENDER = 'noreply@foxcloud.app'
+EMAIL_RECEIVER = 'hanazono@serena.moe'
+SMTP_HOST = 'smtp.office365.com'
+SMTP_USER = 'noreply@foxcloud.app'
 SMTP_PASS = ''
 
 
@@ -50,25 +50,37 @@ class ContactHandler(BaseHandler):
         self.check_xsrf_cookie()
         data = tornado.escape.json_decode(self.request.body)
         print(data)
-        email_subject = 'Message from website: ' + data.get('name') + ' ' + data.get('email')
+        email_subject = 'Message from HanazonoSerena Website: ' + data.get('name') + ' ' + data.get('email')
         email_body = 'name:' + data.get('name') + '\n' + \
                      'email:' + data.get('email') + '\n' + \
                      'title:' + data.get('title') + '\n' + \
                      'message:' + data.get('message') + '\n'
         email_message = MIMEText(email_body, 'plain', 'utf-8')
-        email_message['From'] = Header('hanazono serena site <' + EMAIL_SENDER + '>', 'utf-8')
-        email_message['To'] = Header('serena', 'utf-8')
+        email_message['From'] = Header('Hanazono Serena Site <' + EMAIL_SENDER + '>', 'utf-8')
+        #email_message['To'] = Header('Serena <' + EMAIL_RECEIVER + '>', 'utf-8')
+        email_message['To'] = Header(EMAIL_RECEIVER)
         email_message['Subject'] = Header(email_subject, 'utf-8')
-        try:
-            smtp = smtplib.SMTP()
-            smtp.connect(SMTP_HOST, 25)
-            smtp.login(SMTP_USER, SMTP_PASS)
-            smtp.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], email_message.as_string())
-            self.finish('succeed')
-            return
-        except smtplib.SMTPException:
-            self.set_status(500)
-            self.finish('failed')
+        # try:
+        smtp = smtplib.SMTP(SMTP_HOST,25)
+        # smtp.connect(SMTP_HOST, 25)
+        smtp.connect(SMTP_HOST,587)
+        smtp.ehlo()
+        smtp.starttls()
+        smtp.ehlo()
+        smtp.login(SMTP_USER, SMTP_PASS)
+        smtp.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], email_message.as_string())
+        self.finish('succeed')
+        return
+        # except smtplib.SMTPException:
+        #     self.set_status(500)
+        #     self.finish('failed')
+        #     return
+        # self.set_status(500)
+        # self.finish('failed')
+        #except smtplib.SMTPException:
+        #    self.set_status(500)
+        #    self.finish('failed')
+        #    return
         self.set_status(500)
         self.finish('failed')
 
@@ -90,7 +102,7 @@ class APP(Application):
 def main():
     app = APP()
     server = HTTPServer(app)
-    server.bind(6001)
+    server.listen(6001, address='127.0.0.1')
     server.start()
     IOLoop.current().start()
 
