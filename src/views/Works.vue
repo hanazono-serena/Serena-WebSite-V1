@@ -51,11 +51,59 @@ export default {
             modal: false,
             works: [
                 [{
+                    name: 'bilibili world in 上海',
+                    image: require('../assets/works/20200809-1.png'),
+                    description: '<p>Bilibili World 2020 in 上海に出演させて</p>' +
+                        '<p>頂くことになりました(((o(*ﾟ▽ﾟ*)o)))</p>' +
+                        '<p>みんなに会えるのが楽しみ</p>' +
+                        '<p>おまたせ…！</p>' +
+                        '<p>楽しんでもらえるように</p>' +
+                        '<p>頑張るから 来てね まってるよ！！</p>' +
+                        '<a href="https://bw.bilibili.com/2020/index.html">BiliBili World 2020</a>'
+                }, {
+                    name: 'VUP cafe 2020 in 上海',
+                    image: require('../assets/works/20200801-1.png'),
+                    description: '<p>猫猫のスイーツ＆グッズ！</p>' +
+                        '<p>凄く可愛いでしょ！！</p>' +
+                        '<p>ばっちり監修させていただきました(*´ω｀*)</p>' +
+                        '<p>グッズは他にもありますので、チェックしてみてね！</p>' +
+                        '<p>良かったら皆さん、遊びに来てくださいね！！</p>' +
+                        '<a href="https://t.bilibili.com/418113386938488740">Vup Cafe 2020 in 上海</a>'
+                }, {
+                    name: 'FMラジオ とびきり！BUZZ Music',
+                    image: require('../assets/works/20200721-1.png'),
+                    description: '<p>深夜0am, Mon 7/20 ▶ KAWAII MUSIC presents とびきり！Buzz Music</p>' +
+                        '<p>DJ: #天輝おこめ @a_okome_channel</p>' +
+                        '<p>ネット中心に活動しているアーティストの音楽をピックアップ、バズっているゲストをお招きする番組です</p>' +
+                        '<a href="https://twitter.com/a_okome_channel/status/1285218169615876097">天輝おこめ</a>'
+                }, {
+                    name: '花園セレナ×ＷＥＢポン！',
+                    image: require('../assets/works/20200522-1.png'),
+                    description: '<p>花園セレナ×ウェブポン発売記念キャンペーン</p>' +
+                        '<a href="https://webpon.net/shop/serena/plan/HS">WebPon</a>'
+                }, {
+                    name: '『インディV』個人Vインタビュー雑誌',
+                    image: require('../assets/works/20200502-1.png'),
+                    description: '<p>個人系VTuberインタビュー同人誌のインディV創刊号です。</p>' +
+                        '<p>気になる個人系VTuberの皆さんにインタビューを行い、</p>' +
+                        '<p>普段の配信では聞くことができない本音や想いを深掘りしちゃいました!</p>' +
+                        '<p>表紙の花園セレナさんをはじめ、森永みうさん、高槻りつさん、高峰伊織さん、双葉汐音さんにご参加頂いた、豪華な一冊となっています。</p>' +
+                        '<p>是非ご一読ください!</p>' +
+                        '<a href="https://booth.pm/ja/items/2029330">インディV 2020年5月創刊号</a>'
+                }, {
+                    name: 'エンタス練習会DTM講座×花園セレナ',
+                    image: require('../assets/works/20200414-1.png'),
+                    description: '<p>エンタスYouTubeチャンネルにて#エンタス練習会配信！</p>' +
+                        '<p>初回は講師yuzenによるDJ・DTM講座です！</p>' +
+                        '<p>DTMコーナーでは花園セレナ様にいただいたボイスで楽曲を作っていくぞ！</p>' +
+                        '<p>セレナ様ありがとうございます！お楽しみに！</p>' +
+                        '<a href="https://twitter.com/selecta_takuya/status/1249597563331723265">TAKUYA the bringer</a>'
+                }, {
                     name: 'ポカリスエット 青と夏 海辺篇【CMパロ】',
                     image: require('../assets/works/201908-3.png'),
                     description: '<p>ポカリスエットのCMをガチで作ってみました！！</p>' +
                         '<p>今回は演出および編集を担当してます！</p>' +
-                        '<p>撮影協力に絢瀬和さん、ナレーションはVtuberの花園セレナさんにご協力いただきました喷水鲸鱼</p>' +
+                        '<p>撮影協力に絢瀬和さん、ナレーションはVtuberの花園セレナさんにご協力いただきました</p>' +
                         '<p>徳島の絶景とともにお楽しみください！</p>' +
                         '<iframe width="350" height="215" src="https://www.youtube.com/embed/Cx6JNgKRHEk"' +
                         ' style="border: 0" allow="accelerometer; autoplay; encrypted-media; gyroscope;' +

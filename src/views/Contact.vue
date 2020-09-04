@@ -2,11 +2,11 @@
     <div style="padding-top:50px">
         <div class="wrapper">
             <div>
-                <h1>ご依頼の際は</h1>
-                <p>下記の内容をご記入してください。</p>
-                <p>お名前：</p>
-                <p>連絡先：</p>
-                <p>要求・要望：</p>
+                <h2>ご依頼の際に</h2>
+                <h2>下記の内容をご記入してお願いいたします</h2>
+                <h3>お名前</h3>
+                <h3>連絡先</h3>
+                <h3>依頼内容</h3>
             </div>
             <div>
                 <form id="contact" @submit.prevent="" style="padding-top: 30px">
