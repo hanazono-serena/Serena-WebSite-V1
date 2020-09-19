@@ -52,7 +52,7 @@ export default {
         },
         {
           name: "おねがいマッスル",
-          cover: "https://i.ytimg.com/vi/c9Exc0zzsRU/hqdefault.jpg",
+          cover: "https://i.ytimg.com/vi/c9Exc0zzsRU/maxresdefault.jpg",
           video_src: "https://www.youtube.com/embed/c9Exc0zzsRU",
         },
         {
