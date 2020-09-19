@@ -36,19 +36,9 @@ export default {
     return {
       movie_list: [
         {
-          name: "你的猫咪(君の猫)",
-          cover: "https://i.ytimg.com/vi/xpiAxt7YSIw/maxresdefault.jpg",
-          video_src: "https://www.youtube.com/embed/xpiAxt7YSIw",
-        },
-        {
           name: "ダダダダ天使",
           cover: "https://i.ytimg.com/vi/jcE4Pd0Yxbc/maxresdefault.jpg",
           video_src: "https://www.youtube.com/embed/jcE4Pd0Yxbc",
-        },
-        {
-          name: "五等分の気持ち",
-          cover: "https://i.ytimg.com/vi/-vfa5IrYCE0/hqdefault.jpg",
-          video_src: "https://www.youtube.com/embed/-vfa5IrYCE0",
         },
         {
           name: "おねがいマッスル",
@@ -56,9 +46,10 @@ export default {
           video_src: "https://www.youtube.com/embed/c9Exc0zzsRU",
         },
         {
-          name: "グランドエスケープ",
-          cover: "https://i.ytimg.com/vi/ER26yjAxpYY/hqdefault.jpg",
-          video_src: "https://www.youtube.com/embed/ER26yjAxpYY",
+          name: "Tulip",
+          cover: "https://i.ytimg.com/vi/h6vKx1mygag/hqdefault.jpg",
+          video_src: "https://www.youtube.com/embed/h6vKx1mygag",
+          
         },
         {
           name: "勾指起誓",
@@ -66,9 +57,19 @@ export default {
           video_src: "https://www.youtube.com/embed/znnNgU5p_GM",
         },
         {
-          name: "Tulip",
-          cover: "https://i.ytimg.com/vi/h6vKx1mygag/hqdefault.jpg",
-          video_src: "https://www.youtube.com/embed/h6vKx1mygag",
+          name: "グランドエスケープ",
+          cover: "https://i.ytimg.com/vi/ER26yjAxpYY/hqdefault.jpg",
+          video_src: "https://www.youtube.com/embed/ER26yjAxpYY",
+        },
+        {
+          name: "你的猫咪(君の猫)",
+          cover: "https://i.ytimg.com/vi/xpiAxt7YSIw/maxresdefault.jpg",
+          video_src: "https://www.youtube.com/embed/xpiAxt7YSIw",
+        },
+        {
+          name: "五等分の気持ち",
+          cover: "https://i.ytimg.com/vi/-vfa5IrYCE0/hqdefault.jpg",
+          video_src: "https://www.youtube.com/embed/-vfa5IrYCE0",
         },
       ],
       modal: false,
