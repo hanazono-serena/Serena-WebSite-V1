@@ -339,6 +339,10 @@ export default {
     left: 80px
 }
 
+.swiper-wrapper {
+    max-height: 630px;
+}
+
 .container_box {
     display: flex;
     margin: auto;
@@ -358,7 +362,7 @@ export default {
     align-content: center;
     display: flex;
     flex-direction: column;
-    margin: 5px 15px;
+    margin: 0 15px;
 }
 
 .work_image_container {
