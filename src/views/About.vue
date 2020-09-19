@@ -34,11 +34,6 @@
                     </a>
                 </p>
                 <p class="fan_group_item">
-                    <a href="https://discord.gg/wx9trWn" target="_blank">
-                        <img src="../assets/discord-new-logo.png" class="fan_group_icon" alt="discord" align="center">Discord
-                    </a>
-                </p>
-                <p class="fan_group_item">
                     <a href="https://jq.qq.com/?_wv=1027&k=IrBVYvwY" target="_blank">
                         <img src="../assets/qq.png" class="fan_group_icon" alt="qq" align="center">QQ
                     </a>
