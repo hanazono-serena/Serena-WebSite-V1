@@ -62,14 +62,14 @@ export default {
           video_src: "https://www.youtube.com/embed/ER26yjAxpYY",
         },
         {
-          name: "你的猫咪(君の猫)",
-          cover: "https://i.ytimg.com/vi/xpiAxt7YSIw/maxresdefault.jpg",
-          video_src: "https://www.youtube.com/embed/xpiAxt7YSIw",
-        },
-        {
           name: "五等分の気持ち",
           cover: "https://i.ytimg.com/vi/-vfa5IrYCE0/hqdefault.jpg",
           video_src: "https://www.youtube.com/embed/-vfa5IrYCE0",
+        },
+        {
+          name: "你的猫咪(君の猫)",
+          cover: "https://i.ytimg.com/vi/xpiAxt7YSIw/maxresdefault.jpg",
+          video_src: "https://www.youtube.com/embed/xpiAxt7YSIw",
         },
       ],
       modal: false,
