@@ -39,27 +39,27 @@
                     {
                         name: '五等分の気持ち',
                         cover: 'https://i.ytimg.com/vi/-vfa5IrYCE0/hqdefault.jpg',
-                        video_src: 'https://www.youtube.com/watch?v=-vfa5IrYCE0'
+                        video_src: 'https://www.youtube.com/embed/-vfa5IrYCE0'
                     },
                     {
                         name: 'おねがいマッスル',
                         cover: 'https://i.ytimg.com/vi/c9Exc0zzsRU/hqdefault.jpg',
-                        video_src: 'https://www.youtube.com/watch?v=c9Exc0zzsRU'
+                        video_src: 'https://www.youtube.com/embed/c9Exc0zzsRU'
                     },
                     {
                         name: 'グランドエスケープ',
                         cover: 'https://i.ytimg.com/vi/ER26yjAxpYY/hqdefault.jpg',
-                        video_src: 'https://www.youtube.com/watch?v=ER26yjAxpYY'
+                        video_src: 'https://www.youtube.com/embed/ER26yjAxpYY'
                     },
                     {
                         name: '勾指起誓',
                         cover: 'https://i.ytimg.com/vi/znnNgU5p_GM/hqdefault.jpg',
-                        video_src: 'https://www.youtube.com/watch?v=znnNgU5p_GM'
+                        video_src: 'https://www.youtube.com/embed/znnNgU5p_GM'
                     },
                     {
                         name: 'Tulip',
                         cover: 'https://i.ytimg.com/vi/h6vKx1mygag/hqdefault.jpg',
-                        video_src: 'https://www.youtube.com/watch?v=h6vKx1mygag'
+                        video_src: 'https://www.youtube.com/embed/h6vKx1mygag'
                     }
                 ],
                 modal: false,
