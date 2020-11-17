@@ -1,3 +1,5 @@
+//© 2020 Hanazono Serena
+//@Author brainbush
 module.exports = {
     productionSourceMap: process.env.NODE_ENV !== 'production',
     chainWebpack: config => {
