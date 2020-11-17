@@ -1,3 +1,7 @@
+<!--
+© 2020 Hanazono Serena
+@Author brainbush
+-->
 <template>
     <div id="app">
         <div class="top_window">
