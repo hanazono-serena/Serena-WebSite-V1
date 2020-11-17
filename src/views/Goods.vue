@@ -1,3 +1,8 @@
+<!--
+© 2020 Hanazono Serena
+@Author brainbush
+-->
+
 <template>
     <div class="wrapper">
         <div class="goods_item" v-for="(item,i) in shop_items" :key="i">
