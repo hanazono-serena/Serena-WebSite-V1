@@ -1,3 +1,8 @@
+<!--
+© 2020 Hanazono Serena
+@Author brainbush
+-->
+
 <template>
     <div class="cover_copyright">Illustrated by <a target="_blank" rel="noopener noreferrer"
                                                    href="https://twitter.com/kokuri89490047"
