@@ -1,3 +1,8 @@
+<!--
+© 2020 Hanazono Serena
+@Author brainbush
+-->
+
 <template>
     <div>
         <h1 style="padding-top:50px">花園セレナ</h1>
