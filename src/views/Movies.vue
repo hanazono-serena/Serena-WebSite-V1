@@ -1,3 +1,8 @@
+<!--
+© 2020 Hanazono Serena
+@Author brainbush
+-->
+
 <template>
   <div>
     <div id="videos-wrapper" style>
