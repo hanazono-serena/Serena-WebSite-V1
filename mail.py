@@ -1,3 +1,5 @@
+#© 2020 Hanazono Serena
+#@Author brainbush
 import smtplib
 import os
 from email.mime.text import MIMEText
@@ -9,10 +11,10 @@ from tornado.ioloop import IOLoop
 from tornado.web import Application, HTTPError
 from tornado.web import RequestHandler
 
-EMAIL_SENDER = 'noreply@foxcloud.app'
-EMAIL_RECEIVER = 'hanazono@serena.moe'
-SMTP_HOST = 'smtp.office365.com'
-SMTP_USER = 'noreply@foxcloud.app'
+EMAIL_SENDER = '<Account>'
+EMAIL_RECEIVER = '<Target>'
+SMTP_HOST = '<SMTP Server>'
+SMTP_USER = '<Account>'
 SMTP_PASS = ''
 
 
